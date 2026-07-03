@@ -32,9 +32,9 @@ section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !
 .container-wrapper.container_623353{width:100% !important;max-width:100% !important}
 /* full-bleed blue across the viewport; text + timer centered together as one group */
 body:has(#fuelmaster-root){overflow-x:hidden !important}
-.el-623353{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;justify-content:center !important;align-items:center !important;background:transparent !important;position:relative;z-index:0;gap:28px}
+.el-623353{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;justify-content:center !important;align-items:center !important;background:transparent !important;position:relative;z-index:0;gap:20px}
 /* full-bleed blue painted by a pseudo anchored to the bar (bar is viewport-centered) */
-.el-623353::before{content:'';position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#2162b0;z-index:-1}
+.el-623353::before{content:'';position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#2b4da1;z-index:-1}
 /* geometry needs the (2,2,0) prefix or the host-adaptation width/max-width/padding rules win.
    full-bleed: viewport-wide bar pulled left by its offset within the centered 1170 column */
 .section_row:has(#fuelmaster-root) .el-623353:not(#fuelmaster-root *){padding:6px 16px !important;width:100% !important;max-width:100% !important;margin:0 !important;left:auto !important;transform:none !important}
@@ -45,19 +45,19 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 /* the template's separate MOBILE timer (el-259050, red digits) — one timer serves all breakpoints now */
 .el-623353 .el-259050{display:none !important}
 .el-623353 .element-wrapper:has(.el-259050){display:none !important}
-.el-623353 .el-756939 .paragraph{text-align:left !important;margin:0 !important;padding:0 !important}
-.el-623353 .el-756939 .paragraph p{margin:0 !important;font-size:15px !important;line-height:1.25;white-space:nowrap}
-/* 2nd text line "60 dagars öppet köp!" hidden — guarantee already on the page; bar must stay one line */
-.el-623353 .el-756939 .paragraph p:nth-of-type(2){display:none !important}
+.el-623353 .el-756939 .paragraph{text-align:right !important;margin:0 !important;padding:0 !important}
+.el-623353 .el-756939 .paragraph p{margin:0 !important;font-size:17px !important;line-height:1.3;white-space:nowrap}
+.el-623353 .el-756939 .paragraph p:nth-of-type(1){font-size:18px !important}
+/* reference (vedazz.com/fuelmaster) keeps BOTH text lines, right-aligned beside the timer */
 .el-623353 .el-960807{display:flex !important;margin:0 !important;padding:0 !important}
 .el-623353 .timer-container ul.timer{display:flex !important;gap:8px;margin:0 !important;padding:0 !important;list-style:none !important}
 .el-623353 .timer-container ul.timer li{display:flex !important;flex-direction:column;align-items:center;gap:1px;margin:0 !important;padding:0 !important}
-.el-623353 .timer-container ul.timer li .timer_number{color:#2162b0 !important;background-color:#fff !important;font-size:15px !important;font-weight:700 !important;padding:2px 7px !important;border-radius:6px !important;min-width:32px;box-sizing:border-box;display:inline-block;text-align:center !important}
-.el-623353 .timer-container ul.timer li .timer_label{color:rgba(255,255,255,.85) !important;font-size:9px !important;line-height:1.1 !important;text-transform:uppercase;letter-spacing:.4px}
+.el-623353 .timer-container ul.timer li .timer_number{color:#D21101 !important;background-color:#fff !important;font-size:16px !important;font-weight:700 !important;padding:5px 10px !important;border-radius:10px !important;min-width:40px;box-sizing:border-box;display:inline-block;text-align:center !important}
+.el-623353 .timer-container ul.timer li .timer_label{color:#fff !important;font-size:11px !important;line-height:1.2 !important;text-transform:none;letter-spacing:0}
 @media only screen and (max-width:600px){
 .section_row:has(#fuelmaster-root) .el-623353:not(#fuelmaster-root *){padding:5px 10px !important;gap:14px !important}
-.el-623353 .el-756939 .paragraph p{font-size:11px !important;white-space:nowrap}
-.el-623353 .timer-container ul.timer li .timer_number{font-size:12px !important;padding:2px 5px !important;min-width:26px}
-.el-623353 .timer-container ul.timer li .timer_label{font-size:8px !important}
+.el-623353 .el-756939 .paragraph p{font-size:12px !important;white-space:nowrap}
+.el-623353 .timer-container ul.timer li .timer_number{font-size:13px !important;padding:3px 7px !important;min-width:30px;border-radius:8px !important}
+.el-623353 .timer-container ul.timer li .timer_label{font-size:9px !important}
 }
 
