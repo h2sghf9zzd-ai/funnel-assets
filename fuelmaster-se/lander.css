@@ -37,7 +37,7 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 .el-623353::before{content:'';position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#2b4da1;z-index:-1}
 /* geometry needs the (2,2,0) prefix or the host-adaptation width/max-width/padding rules win.
    full-bleed: viewport-wide bar pulled left by its offset within the centered 1170 column */
-.section_row:has(#fuelmaster-root) .el-623353:not(#fuelmaster-root *){padding:6px 16px !important;width:100% !important;max-width:100% !important;margin:0 !important;left:auto !important;transform:none !important}
+.section_row:has(#fuelmaster-root) .el-623353:not(#fuelmaster-root *){padding:6px 16px !important;width:100% !important;max-width:100% !important;margin:0 !important;left:auto !important;transform:none !important;gap:20px !important}
 /* kill the template's 60%/40% column split so the two boxes hug their edges */
 .section_row:has(#fuelmaster-root) .el-623353 > .container-box:not(#fuelmaster-root *){width:auto !important;min-width:0 !important;max-width:none !important;flex:0 0 auto !important;padding:0 !important}
 .section_row:has(#fuelmaster-root) .el-623353 .element-wrapper:not(#fuelmaster-root *){width:auto !important;max-width:none !important;flex:0 0 auto !important;padding:0 !important}
@@ -57,6 +57,7 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 @media only screen and (max-width:600px){
 .section_row:has(#fuelmaster-root) .el-623353:not(#fuelmaster-root *){padding:5px 10px !important;gap:14px !important}
 .el-623353 .el-756939 .paragraph p{font-size:12px !important;white-space:nowrap}
+.el-623353 .el-756939 .paragraph p:nth-of-type(1){font-size:13px !important}
 .el-623353 .timer-container ul.timer li .timer_number{font-size:13px !important;padding:3px 7px !important;min-width:30px;border-radius:8px !important}
 .el-623353 .timer-container ul.timer li .timer_label{font-size:9px !important}
 }
