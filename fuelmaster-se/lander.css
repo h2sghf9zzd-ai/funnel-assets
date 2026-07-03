@@ -17,8 +17,8 @@ section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !
 #fuelmaster-root .el-259105{display:none !important}
 #fuelmaster-root .el-98616{display:none !important}
 /* Carson 07-03: animated fuel-gauge badge overlaid on the hero image (both device instances) */
-#fuelmaster-root .el-912491.img,#fuelmaster-root .el-746874.img{position:relative;display:block}
-#fuelmaster-root .fm-gauge{position:absolute;right:4%;bottom:5%;width:24%;max-width:150px;height:auto;border-radius:50%;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:2}
+#fuelmaster-root .el-912491.img,#fuelmaster-root .el-746874.img{position:relative}
+#fuelmaster-root .fm-gauge{position:absolute !important;right:4% !important;bottom:5% !important;left:auto !important;width:26% !important;min-width:70px !important;max-width:130px !important;height:auto !important;border-radius:50% !important;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:2}
 
 /* -- timer bar (Carson 07-03): ONE slim line, theme blue #2162b0 (funnel CTA blue), text LEFT / timer RIGHT -- */
 .section_row:has(#fuelmaster-root) > .row-column:has(#fuelmaster-root):not(#fuelmaster-root *){display:flex !important;flex-direction:column}
