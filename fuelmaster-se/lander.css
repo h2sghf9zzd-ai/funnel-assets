@@ -9,3 +9,6 @@ body:has(#fuelmaster-root),.main_wrapper_main:has(#fuelmaster-root){background:#
 /* -- force the host section visible on ALL devices + hide template residue elements sharing it -- */
 section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !important}
 .section_row:has(#fuelmaster-root) .element-wrapper:not(:has(#fuelmaster-root)):not(#fuelmaster-root *){display:none !important}
+
+/* -- unhide the ENTIRE ancestor chain of the block (device-visibility media rules on any wrapper level) -- */
+:is(section,.section_row,.container,.container-box,.row-column,.element-wrapper,.custom,.custom-inner):has(#fuelmaster-root):not(#fuelmaster-root *){display:block !important}
