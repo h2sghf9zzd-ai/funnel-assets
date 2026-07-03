@@ -13,9 +13,15 @@ section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !
 /* -- unhide the ENTIRE ancestor chain of the block (device-visibility media rules on any wrapper level) -- */
 :is(section,.section_row,.container,.container-box,.row-column,.element-wrapper,.custom,.custom-inner):has(#fuelmaster-root):not(#fuelmaster-root *){display:block !important}
 
-/* Carson 07-03: timer bar replaces the BEGRANSAD TID banner (both device instances) */
+/* Carson 07-03: timer bar replaces the BEGRANSAD TID banner (both device instances).
+   The parent sections carry the banner's blue bg + 5px padding (leaves a 10px strip
+   when the row is hidden) but ALSO hold logo rows on some breakpoints - neutralize,
+   don't hide. Also kill the stray margins that pad the gap under the timer. */
 #fuelmaster-root .el-259105{display:none !important}
 #fuelmaster-root .el-98616{display:none !important}
+#fuelmaster-root section.el-665422,#fuelmaster-root section.el-153351{background:transparent !important;padding:0 !important;margin:0 !important;box-shadow:none !important}
+.section_row:has(#fuelmaster-root) .el-258342:not(#fuelmaster-root *){margin-top:0 !important}
+.custom-inner:has(#fuelmaster-root):not(#fuelmaster-root *){margin-top:0 !important}
 /* Carson 07-03: animated fuel-gauge badge overlaid on the hero image (both device instances) */
 #fuelmaster-root .el-912491.img,#fuelmaster-root .el-746874.img{position:relative}
 #fuelmaster-root .fm-gauge{position:absolute !important;right:4% !important;bottom:5% !important;left:auto !important;width:26% !important;min-width:70px !important;max-width:130px !important;height:auto !important;border-radius:50% !important;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:2}
