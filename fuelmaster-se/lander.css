@@ -14,4 +14,10 @@ section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !
 :is(section,.section_row,.container,.container-box,.row-column,.element-wrapper,.custom,.custom-inner):has(#fuelmaster-root):not(#fuelmaster-root *){display:block !important}
 
 /* -- hidden until SE image swaps exist: dentures comment (el-475408), Dutch press logos (el-398444), Dutch trust icons (el-552380) -- */
-#fuelmaster-root .el-475408,#fuelmaster-root .el-398444,#fuelmaster-root .el-552380{display:none !important}
+#fuelmaster-root .el-398444{display:none !important}
+
+/* -- timer bar: unhide the template countdown container, place it ABOVE the block, keep its purple bar -- */
+.row-column:has(#fuelmaster-root):not(#fuelmaster-root *){display:flex !important;flex-direction:column}
+.row-column:has(#fuelmaster-root) > .element-wrapper:has(.el-623353){display:flex !important;order:-1;width:100% !important}
+.el-623353{display:flex !important;background:#64347b;justify-content:center;align-items:center;flex-wrap:wrap;gap:4px 18px;padding:8px 12px}
+
