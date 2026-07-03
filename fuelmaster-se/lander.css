@@ -8,7 +8,7 @@ body:has(#fuelmaster-root),.main_wrapper_main:has(#fuelmaster-root){background:#
 
 /* -- force the host section visible on ALL devices + hide template residue elements sharing it -- */
 section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !important}
-.section_row:has(#fuelmaster-root) .element-wrapper:not(:has(#fuelmaster-root)):not(#fuelmaster-root *):not(:has(.el-623353)){display:none !important}
+.section_row:has(#fuelmaster-root) .element-wrapper:not(:has(#fuelmaster-root)):not(#fuelmaster-root *):not(:has(.el-623353)):not(.el-623353 *){display:none !important}
 
 /* -- unhide the ENTIRE ancestor chain of the block (device-visibility media rules on any wrapper level) -- */
 :is(section,.section_row,.container,.container-box,.row-column,.element-wrapper,.custom,.custom-inner):has(#fuelmaster-root):not(#fuelmaster-root *){display:block !important}
@@ -17,7 +17,7 @@ section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !
 #fuelmaster-root .el-398444{display:none !important}
 
 /* -- timer bar: unhide the template countdown container, place it ABOVE the block, keep its purple bar -- */
-.row-column:has(#fuelmaster-root):not(#fuelmaster-root *){display:flex !important;flex-direction:column}
-.row-column:has(#fuelmaster-root) > .element-wrapper:has(.el-623353){display:flex !important;order:-1;width:100% !important}
+.section_row:has(#fuelmaster-root) > .row-column:has(#fuelmaster-root):not(#fuelmaster-root *){display:flex !important;flex-direction:column}
+.section_row:has(#fuelmaster-root) > .row-column > .element-wrapper:has(.el-623353):not(#fuelmaster-root *){display:flex !important;order:-1;width:100% !important}
 .el-623353{display:flex !important;background:#64347b;justify-content:center;align-items:center;flex-wrap:wrap;gap:4px 18px;padding:8px 12px}
 
