@@ -75,7 +75,8 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 #fuelmaster-root .fm-faq summary::after{content:'⌄';font-size:18px;line-height:1;transition:transform .2s;flex:0 0 auto}
 #fuelmaster-root .fm-faq details[open] summary::after{transform:rotate(180deg)}
 #fuelmaster-root .fm-faq details p{margin:0;padding:0 18px 16px;color:#e6e6e6;font-weight:400;font-size:14.5px;line-height:1.55;text-align:left}
-#fuelmaster-root .fm-offer{background:#e3eafb;padding:34px 16px;border-radius:14px;margin:10px 0 26px}
+#fuelmaster-root .fm-offer{background:transparent;padding:34px 16px;margin:10px 0 0;position:relative;z-index:0}
+#fuelmaster-root .fm-offer::before{content:'';position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#e3eafb;z-index:-1}
 #fuelmaster-root .fm-offer>h2{text-align:center;font-size:22px;font-weight:800;color:#1c1e21;max-width:860px;margin:0 auto 24px;line-height:1.35}
 #fuelmaster-root .fm-tiers{display:flex;gap:20px;justify-content:center;align-items:stretch;flex-wrap:wrap}
 #fuelmaster-root .fm-tier{background:#fff;border-radius:12px;width:300px;max-width:100%;text-align:center;padding-bottom:18px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08);display:flex;flex-direction:column}
