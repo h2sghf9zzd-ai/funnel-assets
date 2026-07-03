@@ -118,3 +118,40 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 #fuelmaster-root .fm-support img{width:210px;max-width:70%;height:auto;display:block;margin:0 auto 16px}
 #fuelmaster-root .fm-support p{font-size:15.5px;color:#31343a;line-height:1.6;margin:10px 0}
 #fuelmaster-root .fm-support-legal{font-size:13.5px;color:#6b7078;margin-top:22px !important}
+
+/* benefits checklist spacing to match reference */
+#fuelmaster-root .el-78019 .paragraph p{margin:10px 0 !important}
+
+/* innovation 4-up (reference section, medical residue image replaced) */
+#fuelmaster-root .fm-innov{background:transparent;padding:34px 16px 28px;position:relative;z-index:0;margin:24px 0}
+#fuelmaster-root .fm-innov::before{content:'';position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#e3eafb;z-index:-1}
+#fuelmaster-root .fm-innov h2{text-align:center;font-size:23px;font-weight:800;color:#2b4da1;margin:0 0 6px}
+#fuelmaster-root .fm-innov-sub{text-align:center;font-size:17px;color:#1c1e21;margin:0 0 26px}
+#fuelmaster-root .fm-innov-track{display:flex;gap:26px;justify-content:center}
+#fuelmaster-root .fm-innov-item{flex:1 1 0;max-width:255px;text-align:left}
+#fuelmaster-root .fm-innov-item img{width:150px;height:150px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 14px}
+#fuelmaster-root .fm-innov-item h3{font-size:14.5px;font-weight:800;color:#1c1e21;margin:0 0 8px;display:flex;gap:7px;align-items:flex-start;line-height:1.3}
+#fuelmaster-root .fm-innov-item h3 span{color:#2b4da1;flex:0 0 auto}
+#fuelmaster-root .fm-innov-item p{font-size:12.5px;color:#31343a;line-height:1.5;margin:0}
+@media only screen and (max-width:600px){
+#fuelmaster-root .fm-innov-track{justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:10px}
+#fuelmaster-root .fm-innov-item{flex:0 0 76%;max-width:none;scroll-snap-align:center}
+}
+
+/* reviews carousel (reference format) */
+#fuelmaster-root .fm-reviews{padding:36px 14px 26px;text-align:center}
+#fuelmaster-root .fm-rev-note{font-style:italic;font-size:14px;color:#4a4a4a;margin:0 0 8px}
+#fuelmaster-root .fm-reviews h2{font-size:25px;font-weight:800;color:#1c1e21;margin:0 0 4px}
+#fuelmaster-root .fm-rev-sub{font-weight:700;font-size:15px;color:#1c1e21;margin:0 0 22px}
+#fuelmaster-root .fm-rev-track{display:flex;gap:20px;justify-content:center;align-items:stretch}
+#fuelmaster-root .fm-rev-card{background:#e9edfb;border-radius:14px;padding:16px;flex:1 1 0;max-width:340px;text-align:center;display:flex;flex-direction:column}
+#fuelmaster-root .fm-rev-card img.fm-rev-photo{width:100%;height:auto;border-radius:12px;display:block;margin:0 0 12px}
+#fuelmaster-root .fm-rev-stars{color:#00b67a;font-size:16px;letter-spacing:3px;margin:0 0 4px}
+#fuelmaster-root .fm-rev-meta{display:flex;align-items:center;justify-content:center;gap:8px;font-weight:800;font-size:14px;color:#1c1e21}
+#fuelmaster-root .fm-rev-meta img{width:20px;height:auto;border-radius:2px}
+#fuelmaster-root .fm-rev-pub{font-size:11px;color:#9aa0aa;margin:3px 0 10px}
+#fuelmaster-root .fm-rev-text{font-size:13.5px;color:#31343a;line-height:1.55;margin:0}
+@media only screen and (max-width:600px){
+#fuelmaster-root .fm-rev-track{justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:10px}
+#fuelmaster-root .fm-rev-card{flex:0 0 82%;max-width:none;scroll-snap-align:center}
+}
