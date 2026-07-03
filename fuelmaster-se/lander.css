@@ -110,3 +110,11 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 #fuelmaster-root .fm-bump{order:1;margin:0 auto 20px}
 #fuelmaster-root .fm-tiers{order:2}
 }
+
+/* Expert kundtjanst support section (reference format) — replaces the old footer */
+#fuelmaster-root .fm-support{background:#fff;text-align:center;padding:44px 18px 30px;max-width:760px;margin:0 auto}
+#fuelmaster-root .fm-support h2{font-size:24px;font-weight:800;color:#1c1e21;margin:0 0 18px}
+#fuelmaster-root .fm-support-lead{font-size:17px;color:#1c1e21;line-height:1.55;margin:0 auto 18px;max-width:640px}
+#fuelmaster-root .fm-support img{width:210px;max-width:70%;height:auto;display:block;margin:0 auto 16px}
+#fuelmaster-root .fm-support p{font-size:15.5px;color:#31343a;line-height:1.6;margin:10px 0}
+#fuelmaster-root .fm-support-legal{font-size:13.5px;color:#6b7078;margin-top:22px !important}
