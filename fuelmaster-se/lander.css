@@ -22,6 +22,9 @@ section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !
 #fuelmaster-root section.el-665422,#fuelmaster-root section.el-153351{background:transparent !important;padding:0 !important;margin:0 !important;box-shadow:none !important}
 .section_row:has(#fuelmaster-root) .el-258342:not(#fuelmaster-root *){margin-top:0 !important}
 .custom-inner:has(#fuelmaster-root):not(#fuelmaster-root *){margin-top:0 !important}
+/* Trustpilot 4,8 strip (imported from the vedazz reference): free it from the old rating strip's fixed-width wrappers */
+#fuelmaster-root img[src*="trustpilot"]{width:340px !important;max-width:100% !important;height:auto !important}
+#fuelmaster-root .img:has(img[src*="trustpilot"]),#fuelmaster-root .element-wrapper:has(img[src*="trustpilot"]),#fuelmaster-root .container-box:has(img[src*="trustpilot"]){width:auto !important;max-width:100% !important;min-width:0 !important;overflow:visible !important}
 /* Carson 07-03: animated fuel-gauge badge overlaid on the hero image (both device instances) */
 #fuelmaster-root .el-912491.img,#fuelmaster-root .el-746874.img{position:relative}
 #fuelmaster-root .fm-gauge{position:absolute !important;right:4% !important;bottom:5% !important;left:auto !important;width:26% !important;min-width:70px !important;max-width:130px !important;height:auto !important;border-radius:50% !important;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:2}
