@@ -12,3 +12,6 @@ section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !
 
 /* -- unhide the ENTIRE ancestor chain of the block (device-visibility media rules on any wrapper level) -- */
 :is(section,.section_row,.container,.container-box,.row-column,.element-wrapper,.custom,.custom-inner):has(#fuelmaster-root):not(#fuelmaster-root *){display:block !important}
+
+/* -- hidden until SE image swaps exist: dentures comment (el-475408), Dutch press logos (el-398444), Dutch trust icons (el-552380) -- */
+#fuelmaster-root .el-475408,#fuelmaster-root .el-398444,#fuelmaster-root .el-552380{display:none !important}
