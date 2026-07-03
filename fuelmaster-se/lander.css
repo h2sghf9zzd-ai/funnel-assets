@@ -102,3 +102,11 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 #fuelmaster-root .fm-bump-special{color:#d0021b;font-weight:800;font-size:12px;letter-spacing:.3px;margin:4px 0 2px}
 #fuelmaster-root .fm-bump-desc{font-size:13px;color:#31343a;line-height:1.45}
 #fuelmaster-root .fm-bump-desc s{color:#8a8f98}
+
+/* mobile: bump card ABOVE the offer cards (Carson 07-03) */
+@media only screen and (max-width:600px){
+#fuelmaster-root .fm-offer{display:flex;flex-direction:column}
+#fuelmaster-root .fm-offer>h2{order:0}
+#fuelmaster-root .fm-bump{order:1;margin:0 auto 20px}
+#fuelmaster-root .fm-tiers{order:2}
+}
