@@ -13,8 +13,12 @@ section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !
 /* -- unhide the ENTIRE ancestor chain of the block (device-visibility media rules on any wrapper level) -- */
 :is(section,.section_row,.container,.container-box,.row-column,.element-wrapper,.custom,.custom-inner):has(#fuelmaster-root):not(#fuelmaster-root *){display:block !important}
 
-/* -- hidden until SE image swaps exist: dentures comment (el-475408), Dutch press logos (el-398444), Dutch trust icons (el-552380) -- */
-#fuelmaster-root .el-398444{display:none !important}
+/* Carson 07-03: timer bar replaces the BEGRANSAD TID banner (both device instances) */
+#fuelmaster-root .el-259105{display:none !important}
+#fuelmaster-root .el-98616{display:none !important}
+/* Carson 07-03: animated fuel-gauge badge overlaid on the hero image (both device instances) */
+#fuelmaster-root .el-912491.img,#fuelmaster-root .el-746874.img{position:relative;display:block}
+#fuelmaster-root .fm-gauge{position:absolute;right:4%;bottom:5%;width:24%;max-width:150px;height:auto;border-radius:50%;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:2}
 
 /* -- timer bar (Carson 07-03): ONE slim line, theme blue #2162b0 (funnel CTA blue), text LEFT / timer RIGHT -- */
 .section_row:has(#fuelmaster-root) > .row-column:has(#fuelmaster-root):not(#fuelmaster-root *){display:flex !important;flex-direction:column}
