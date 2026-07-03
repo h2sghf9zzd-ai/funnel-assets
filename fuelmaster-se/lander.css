@@ -30,10 +30,11 @@ section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !
 .section_row:has(#fuelmaster-root) > .row-column:has(#fuelmaster-root):not(#fuelmaster-root *){display:flex !important;flex-direction:column}
 .section_row:has(#fuelmaster-root) > .row-column > .element-wrapper:has(.el-623353):not(#fuelmaster-root *){display:flex !important;order:-1;width:100% !important}
 .container-wrapper.container_623353{width:100% !important;max-width:100% !important}
-.el-623353{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;justify-content:space-between !important;align-items:center !important;background:#2162b0 !important;width:100% !important;gap:12px}
-/* padding needs the (2,2,0) prefix or the host-adaptation padding:0 wins; 10px side inset aligns
-   text/timer with the content column below; max() keeps them centered if the bar runs wider */
-.section_row:has(#fuelmaster-root) .el-623353:not(#fuelmaster-root *){padding:6px max(10px,calc((100% - 1150px)/2)) !important}
+/* full-bleed blue across the viewport; text + timer centered together as one group */
+body:has(#fuelmaster-root){overflow-x:hidden !important}
+.el-623353{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;justify-content:center !important;align-items:center !important;background:#2162b0 !important;width:100vw !important;max-width:100vw !important;margin-left:calc(50% - 50vw) !important;gap:28px}
+/* padding needs the (2,2,0) prefix or the host-adaptation padding:0 wins */
+.section_row:has(#fuelmaster-root) .el-623353:not(#fuelmaster-root *){padding:6px 16px !important}
 /* kill the template's 60%/40% column split so the two boxes hug their edges */
 .section_row:has(#fuelmaster-root) .el-623353 > .container-box:not(#fuelmaster-root *){width:auto !important;min-width:0 !important;max-width:none !important;flex:0 0 auto !important;padding:0 !important}
 .section_row:has(#fuelmaster-root) .el-623353 .element-wrapper:not(#fuelmaster-root *){width:auto !important;max-width:none !important;flex:0 0 auto !important;padding:0 !important}
@@ -51,7 +52,7 @@ section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !
 .el-623353 .timer-container ul.timer li .timer_number{color:#2162b0 !important;background-color:#fff !important;font-size:15px !important;font-weight:700 !important;padding:2px 7px !important;border-radius:6px !important;min-width:32px;box-sizing:border-box;display:inline-block;text-align:center !important}
 .el-623353 .timer-container ul.timer li .timer_label{color:rgba(255,255,255,.85) !important;font-size:9px !important;line-height:1.1 !important;text-transform:uppercase;letter-spacing:.4px}
 @media only screen and (max-width:600px){
-.section_row:has(#fuelmaster-root) .el-623353:not(#fuelmaster-root *){padding:5px 10px !important}
+.section_row:has(#fuelmaster-root) .el-623353:not(#fuelmaster-root *){padding:5px 10px !important;gap:14px !important}
 .el-623353 .el-756939 .paragraph p{font-size:11px !important;white-space:nowrap}
 .el-623353 .timer-container ul.timer li .timer_number{font-size:12px !important;padding:2px 5px !important;min-width:26px}
 .el-623353 .timer-container ul.timer li .timer_label{font-size:8px !important}
