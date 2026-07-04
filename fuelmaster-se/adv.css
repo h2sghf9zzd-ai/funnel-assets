@@ -13,3 +13,8 @@ section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !
 
 /* -- unhide the ENTIRE ancestor chain of the block (device-visibility media rules on any wrapper level) -- */
 :is(section,.section_row,.container,.container-box,.row-column,.element-wrapper,.custom,.custom-inner):has(#fuelmaster-root):not(#fuelmaster-root *){display:block !important}
+
+/* Carson 07-03: NYHETSBLOGG header bar edge-to-edge (desktop section; mobile el-7567 is already full-width) */
+body:has(#fuelmaster-root){overflow-x:hidden !important}
+#fuelmaster-root section.el-589086{position:relative;z-index:0;background:transparent !important}
+#fuelmaster-root section.el-589086::before{content:'';position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#000;z-index:-1}
