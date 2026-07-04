@@ -181,3 +181,17 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 #fuelmaster-root .fm-stat b{font-size:20px}
 #fuelmaster-root .fm-stat span{font-size:10.5px}
 }
+
+/* "Som sett i" logo marquee (reference-style, our SE tech brands) */
+#fuelmaster-root .fm-press{position:relative;overflow:hidden;width:100%;max-width:100%;padding:16px 0;background:#fff}
+#fuelmaster-root .fm-press-track{display:flex;align-items:center;gap:64px;width:max-content;animation:fm-marquee 30s linear infinite}
+#fuelmaster-root .fm-press-track img{height:26px;width:auto;opacity:.7;flex:0 0 auto}
+@keyframes fm-marquee{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+#fuelmaster-root .fm-press-cap{position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none;background:linear-gradient(90deg,rgba(255,255,255,0),#fff 26%,#fff 74%,rgba(255,255,255,0))}
+#fuelmaster-root .fm-press-cap i{color:#7aa5e8;font-style:normal;font-size:15px;letter-spacing:3px;line-height:1}
+#fuelmaster-root .fm-press-cap b{font-size:15px;color:#1c1e21;margin-top:2px}
+@media only screen and (max-width:600px){
+#fuelmaster-root .fm-press-track{gap:44px}
+#fuelmaster-root .fm-press-track img{height:21px}
+#fuelmaster-root .fm-press-cap{width:190px}
+}
