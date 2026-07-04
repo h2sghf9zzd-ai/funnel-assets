@@ -144,7 +144,8 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 #fuelmaster-root .fm-innov-track::-webkit-scrollbar{display:none}
 #fuelmaster-root .fm-innov-item{flex:0 0 100%;max-width:none;scroll-snap-align:center;text-align:center;padding:0 34px;box-sizing:border-box}
 #fuelmaster-root .fm-innov-item img{width:215px;height:215px}
-#fuelmaster-root .fm-innov-item h3{justify-content:center;text-align:left;display:inline-flex;font-size:17px}
+#fuelmaster-root .fm-innov-item h3{display:block;text-align:center;font-size:17px}
+#fuelmaster-root .fm-innov-item h3 span{margin-right:7px}
 #fuelmaster-root .fm-innov-item p{text-align:center;font-size:15px;line-height:1.55}
 #fuelmaster-root .fm-innov-btn{display:block}
 #fuelmaster-root .fm-innov-dots{display:flex}
