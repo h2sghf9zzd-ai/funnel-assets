@@ -197,3 +197,16 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 #fuelmaster-root .fm-press-track img[src*="press-m3"],#fuelmaster-root .fm-press-track img[src*="press-teknikens"]{height:34px}
 #fuelmaster-root .fm-press-cap{width:190px}
 }
+
+/* HTML trust row replaces trust-se.png (icon clipping at scale) */
+#fuelmaster-root .fm-trust{display:flex;justify-content:center;align-items:center;gap:72px;padding:14px 8px;width:100%;max-width:100%;box-sizing:border-box}
+#fuelmaster-root .fm-trust-item{display:flex;align-items:center;gap:12px;min-width:0;text-align:left}
+#fuelmaster-root .fm-trust-item svg{width:42px;height:42px;color:#1c1e21;flex:0 0 auto}
+#fuelmaster-root .fm-trust-item b{display:block;font-size:14px;font-weight:700;color:#1c1e21;line-height:1.3}
+#fuelmaster-root .fm-trust-item i{display:block;font-style:normal;font-weight:700;font-size:14px;color:#5b8c6e;line-height:1.3}
+@media only screen and (max-width:600px){
+#fuelmaster-root .fm-trust{gap:16px;padding:12px 4px}
+#fuelmaster-root .fm-trust-item{gap:7px}
+#fuelmaster-root .fm-trust-item svg{width:30px;height:30px}
+#fuelmaster-root .fm-trust-item b,#fuelmaster-root .fm-trust-item i{font-size:11px}
+}
