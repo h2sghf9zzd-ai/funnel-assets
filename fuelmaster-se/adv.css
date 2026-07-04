@@ -18,3 +18,9 @@ section:has(#fuelmaster-root),.section_row:has(#fuelmaster-root){display:block !
 body:has(#fuelmaster-root){overflow-x:hidden !important}
 #fuelmaster-root section.el-589086{position:relative;z-index:0;background:transparent !important}
 #fuelmaster-root section.el-589086::before{content:'';position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#000;z-index:-1}
+
+/* pull the header bar to the very top: zero the wrapper-chain gaps above the block */
+.custom-inner:has(#fuelmaster-root):not(#fuelmaster-root *){margin-top:0 !important}
+.section_row:has(#fuelmaster-root) .el-382809:not(#fuelmaster-root *){margin-top:0 !important}
+section:has(#fuelmaster-root){padding-top:0 !important}
+body:has(#fuelmaster-root){margin-top:0 !important;padding-top:0 !important}
