@@ -222,3 +222,13 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 @media only screen and (max-width:600px){
 #fuelmaster-root .el-788209 img{height:46px !important;width:auto !important;margin:0 auto}
 }
+
+/* cream benefits card (replaces the FB-style comment card, per reference) */
+#fuelmaster-root .fm-benefits{background:#f7f3e9;border-radius:14px;padding:20px 22px;max-width:560px;margin:10px auto;display:flex;flex-direction:column;gap:16px;text-align:left}
+#fuelmaster-root .fm-benefits>div{display:flex;align-items:center;gap:14px;font-size:16.5px;font-weight:500;color:#1c1e21;line-height:1.3}
+#fuelmaster-root .fm-benefits svg{width:32px;height:32px;flex:0 0 auto;color:#111}
+@media only screen and (max-width:600px){
+#fuelmaster-root .fm-benefits{padding:16px 16px;gap:13px}
+#fuelmaster-root .fm-benefits>div{font-size:14.5px;gap:11px}
+#fuelmaster-root .fm-benefits svg{width:27px;height:27px}
+}
