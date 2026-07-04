@@ -216,3 +216,9 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 @media only screen and (max-width:600px){
 #fuelmaster-root .el-417105 .headline p{font-size:24px !important;line-height:1.25 !important}
 }
+
+/* tighter logo band between timer and hero (Carson 07-03) */
+#fuelmaster-root .el-788209.img{margin:4px 0 !important}
+@media only screen and (max-width:600px){
+#fuelmaster-root .el-788209 img{height:46px !important;width:auto !important;margin:0 auto}
+}
