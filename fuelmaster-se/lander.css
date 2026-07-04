@@ -210,3 +210,8 @@ body:has(#fuelmaster-root){overflow-x:hidden !important}
 #fuelmaster-root .fm-trust-item svg{width:30px;height:30px}
 #fuelmaster-root .fm-trust-item b,#fuelmaster-root .fm-trust-item i{font-size:11px}
 }
+
+/* mobile headline clamp: hero headline max 3 lines (Carson 07-03) */
+@media only screen and (max-width:600px){
+#fuelmaster-root .el-417105 .headline p{font-size:24px !important;line-height:1.25 !important}
+}
