@@ -9218,3 +9218,5 @@
 :is(section,.section_row):has(#venoria-root):not(#venoria-root *){padding:0!important;margin:0!important}
 /* residue-hide: template elements sharing the host section */
 .element-wrapper:not(:has(#venoria-root)):not(#venoria-root *){display:none!important}
+
+/* === inline element styles extracted from block (order preserved) === */
