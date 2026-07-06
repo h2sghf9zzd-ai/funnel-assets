@@ -9220,3 +9220,6 @@
 .element-wrapper:not(:has(#venoria-root)):not(#venoria-root *){display:none!important}
 
 /* === inline element styles extracted from block (order preserved) === */
+
+/* page background — Funnelish dark default must not show through */
+body, .main_wrapper_main, #render-table { background: #ffffff !important; }

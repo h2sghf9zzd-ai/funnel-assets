@@ -16555,3 +16555,6 @@ text-shadow: 0 0 3px rgba(0,0,0,0.55);
 .element-wrapper:not(:has(#venoria-root)):not(#venoria-root *){display:none!important}
 
 /* === inline element styles extracted from block (order preserved) === */
+
+/* page background — Funnelish dark default must not show through */
+body, .main_wrapper_main, #render-table { background: #ffffff !important; }
