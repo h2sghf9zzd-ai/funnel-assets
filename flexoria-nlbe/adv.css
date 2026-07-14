@@ -4415,3 +4415,6 @@
 @media only screen and (min-width: 0px) and (max-width: 600px) {
 #flexoria-root .el-472813 .el-198045 .paragraph { display: inherit; text-align: center; }
 }
+
+/* host adaptation: Funnelish serves a dark page default (Spike #3 gotcha) */
+body,.main_wrapper_main,#render-table{background:#fff!important}
