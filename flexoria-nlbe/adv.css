@@ -4418,3 +4418,10 @@
 
 /* host adaptation: Funnelish serves a dark page default (Spike #3 gotcha) */
 body,.main_wrapper_main,#render-table{background:#fff!important}
+
+/* === host-adaptation (assemble; pattern from venoria/fuelmaster-se) === */
+:is(section,.section_row,.container,.element-wrapper,.container-box,.row,.col,.section_wrapper):has(#flexoria-root):not(#flexoria-root *){display:block!important;width:100%!important;min-width:0!important;max-width:none!important;visibility:visible!important}
+:is(section,.section_row):has(#flexoria-root):not(#flexoria-root *){padding:0!important;margin:0!important}
+/* residue-hide: template elements sharing the host section */
+.element-wrapper:not(:has(#flexoria-root)):not(#flexoria-root *){display:none!important}
+body:has(#flexoria-root){overflow-x:hidden}
