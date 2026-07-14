@@ -12054,3 +12054,8 @@ body,.main_wrapper_main,#render-table{background:#fff!important}
 /* residue-hide: template elements sharing the host section */
 .element-wrapper:not(:has(#flexoria-root)):not(#flexoria-root *){display:none!important}
 body:has(#flexoria-root){overflow-x:hidden}
+
+/* === design-review fixes 2026-07-14 === */
+/* review-card "published on" dates (was 11px) */
+#flexoria-root .el-320994, #flexoria-root .el-688811, #flexoria-root .el-802322,
+#flexoria-root .el-320994 *, #flexoria-root .el-688811 *, #flexoria-root .el-802322 * { font-size: 12px !important; }

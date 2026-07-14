@@ -12054,3 +12054,17 @@ body,.main_wrapper_main,#render-table{background:#fff!important}
 /* residue-hide: template elements sharing the host section */
 .element-wrapper:not(:has(#flexoria-root)):not(#flexoria-root *){display:none!important}
 body:has(#flexoria-root){overflow-x:hidden}
+
+/* === design-review fixes 2026-07-14 === */
+/* review-card "published on" dates (was 11px) */
+#flexoria-root .el-320994, #flexoria-root .el-688811, #flexoria-root .el-802322,
+#flexoria-root .el-320994 *, #flexoria-root .el-688811 *, #flexoria-root .el-802322 * { font-size: 12px !important; }
+/* SE offer-card small text floor (Totalt/garanti were 10px) */
+#flexoria-root .el-698029, #flexoria-root .el-620271, #flexoria-root .el-289011,
+#flexoria-root .el-997579, #flexoria-root .el-25567, #flexoria-root .el-821746,
+#flexoria-root .el-698029 *, #flexoria-root .el-620271 *, #flexoria-root .el-289011 *,
+#flexoria-root .el-997579 *, #flexoria-root .el-25567 *, #flexoria-root .el-821746 * { font-size: 11.5px !important; }
+/* offer-card jar images: identical boxes (were 145/145/135) */
+@media only screen and (max-width: 600px) {
+  #flexoria-root .el-420671 img, #flexoria-root .el-87602 img, #flexoria-root .el-394139 img { width: 135px !important; height: 135px !important; object-fit: contain !important; }
+}

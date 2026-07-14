@@ -4425,3 +4425,10 @@ body,.main_wrapper_main,#render-table{background:#fff!important}
 /* residue-hide: template elements sharing the host section */
 .element-wrapper:not(:has(#flexoria-root)):not(#flexoria-root *){display:none!important}
 body:has(#flexoria-root){overflow-x:hidden}
+
+/* === design-review fixes 2026-07-14 === */
+/* copyright line readable (was 10px) */
+#flexoria-root .el-198045, #flexoria-root .el-198045 * { font-size: 12px !important; }
+/* news-site header band full-bleed (standard #4; ::before pattern) */
+#flexoria-root .el-368179 { position: relative; z-index: 0; background: transparent !important; }
+#flexoria-root .el-368179::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%); background: rgb(10, 16, 70); z-index: -1; }
