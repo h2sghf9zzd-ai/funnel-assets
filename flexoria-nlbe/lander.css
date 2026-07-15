@@ -12059,3 +12059,9 @@ body:has(#flexoria-root){overflow-x:hidden}
 /* review-card "published on" dates (was 11px) */
 #flexoria-root .el-320994, #flexoria-root .el-688811, #flexoria-root .el-802322,
 #flexoria-root .el-320994 *, #flexoria-root .el-688811 *, #flexoria-root .el-802322 * { font-size: 12px !important; }
+
+/* === Carson-review fixes 2026-07-15 === */
+/* hero savings pill touched the struck anchor price (110px btn right-margin
+   squeezed the flex row; NL text is longer than SE) — measured live:
+   gap -2.1px -> +22.9px at 60px */
+#flexoria-root .el-923338 .el-585363 .btn { margin-right: 60px !important; }
