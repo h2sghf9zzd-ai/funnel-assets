@@ -8128,3 +8128,6 @@ body,.main_wrapper_main,#render-table{background:#fff!important}
 /* residue-hide: template elements sharing the host section */
 .element-wrapper:not(:has(#radixol-root)):not(#radixol-root *){display:none!important}
 body:has(#radixol-root){overflow-x:hidden}
+
+/* 2026-07-23: skeleton host section ships a BLACK background (fuelmaster origin) — neutralize */
+:is(section,.section_row,.container,.element-wrapper,.container-box,.row,.col,.section_wrapper):has(#radixol-root):not(#radixol-root *){background:transparent!important}
