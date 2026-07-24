@@ -8131,3 +8131,6 @@ body:has(#radixol-root){overflow-x:hidden}
 
 /* 2026-07-23: skeleton host section ships a BLACK background (fuelmaster origin) — neutralize */
 :is(section,.section_row,.container,.element-wrapper,.container-box,.row,.col,.section_wrapper):has(#radixol-root):not(#radixol-root *){background:transparent!important}
+
+/* 2026-07-24: skeleton wrapper margins (custom-inner 10px + container 10px) left a 20px white gap above the block — collapse */
+:is(.custom-inner,.custom,.container,.container-box,.element-wrapper):has(#radixol-root):not(#radixol-root *){margin:0!important;padding:0!important}
