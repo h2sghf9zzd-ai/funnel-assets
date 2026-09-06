@@ -8072,7 +8072,7 @@ document.querySelector(".logos").appendChild(copy);
 :where(#hydrivo-root) .fnsh-status--paid { --fnsh-status-color: #6B6560; }
 :where(#hydrivo-root) .fnsh-status__dot { width: 6px; height: 6px; border-radius: 50%; flex: 0 0 auto; background: currentcolor; }
 :where(#hydrivo-root) * { box-sizing: border-box; }
-:where(#hydrivo-root) { margin: 0px; padding: 0px; font-family: sans-serif; font-weight: 400; color: rgb(99, 106, 123); font-size: 13px; }
+:where(#hydrivo-root) { margin: 0px; padding: 0px; font-family: Roboto, sans-serif; font-weight: 400; color: rgb(99, 106, 123); font-size: 13px; }
 :where(#hydrivo-root) input, :where(#hydrivo-root) select, :where(#hydrivo-root) textarea { appearance: auto; }
 :where(#hydrivo-root) a, :where(#hydrivo-root) a:hover, :where(#hydrivo-root) a:focus, :where(#hydrivo-root) a:visited, :where(#hydrivo-root) a:active { text-decoration: none; }
 :where(#hydrivo-root) [data-popup-trigger], :where(#hydrivo-root) [data-goto-element] { cursor: pointer; }
