@@ -221,7 +221,7 @@
 @media only screen and (min-width: 0px) and (max-width: 600px) {
 :where(#frisgebit-root) .section_wrapper_337018 .section_row { max-width:1170px; }
 }
-:where(#frisgebit-root) .el-337018 { display:inherit;padding:0px 0px 0px 0px;background-repeat:no-repeat;background-image:url("////img.funnelish.com/10101/169449/1700600465-Progetto%20senza%20titolo%20-%202023-11-21T230044.068.png?auto=webp&clip=bounds");background-position:center top;background-size:100% auto; }
+:where(#frisgebit-root) .el-337018 { display:inherit;padding:0px 0px 0px 0px;background-repeat:no-repeat;background-image:url("https://cdn.jsdelivr.net/gh/h2sghf9zzd-ai/funnel-assets@{SHA}/tandora-se/lander/dd69cfd2accd.png");background-position:center top;background-size:100% auto; }
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
 :where(#frisgebit-root) .el-337018 { display:inherit; }
 }
@@ -4650,7 +4650,7 @@
 @media only screen and (min-width: 0px) and (max-width: 600px) {
 :where(#frisgebit-root) .section_wrapper_337018 .section_row { max-width: 1170px; }
 }
-:where(#frisgebit-root) .el-337018 { display: inherit; padding: 0px; background-repeat: no-repeat; background-image: url("////img.funnelish.com/10101/169449/1700600465-Progetto%20senza%20titolo%20-%202023-11-21T230044.068.png?auto=webp&clip=bounds"); background-position: center top; background-size: 100%; }
+:where(#frisgebit-root) .el-337018 { display: inherit; padding: 0px; background-repeat: no-repeat; background-image: url("https://cdn.jsdelivr.net/gh/h2sghf9zzd-ai/funnel-assets@{SHA}/tandora-se/lander/dd69cfd2accd.png"); background-position: center top; background-size: 100%; }
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
 :where(#frisgebit-root) .el-337018 { display: inherit; }
 }
